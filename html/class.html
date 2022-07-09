@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="#">
+
+    <title>ML Strength - class</title>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="help">
+                <div class="title-icon" onclick={goHelp()} on tabindex="0">
+                    <img src="../images/questionnaire-line.png" alt="fitness-image1">
+                    <p>Help?</p>
+                </div>
+                <div class="help-video">
+                    <img src="../help.gif" alt="help.gif">
+                </div>
+            </div>
+            <div class="title-header">
+                <hgroup>
+                    <h1 class="header1">ML Strength</h1>
+                    <p class="header2">Health and Fitness</p>
+                </hgroup>
+            </div>
+            <div class="title-icons">
+                <div class="title-icon" onclick={goBook()} tabindex="0">
+                    <img src="../images/home/pexels-andrea-piacquadio-3768916.jpg" alt="fitness-image1">
+                    <p>Book</p>
+                </div>
+                <div class="title-icon" onclick={goSchedule()} tabindex="0">
+                    <img src="../images/home/pexels-bruno-bueno-2204179.jpg" alt="fitness-image2">
+                    <p>Schedule</p>
+                </div>
+            </div>
+        </header>
+        <nav id="nav-component"></nav>
+        <section class="class-page-image"></section>
+
+        <section class="class-schedule-timetable" id="class-schedule-timetable">
+            <h1>Schedule Timetable</h1>
+            <div class="calender-container">
+                <h2>May</h2>
+                <div class="calender-all-rows">
+                    <div class="calender-row">
+                        <div class="calender-component-day">Sunday</div>
+                        <div class="calender-component-day">Monday</div>
+                        <div class="calender-component-day">Tuesday</div>
+                        <div class="calender-component-day">Wednesday</div>
+                        <div class="calender-component-day">Thursday</div>
+                        <div class="calender-component-day">Friday</div>
+                        <div class="calender-component-day">Saturday</div>
+                    </div>
+                    <div class="calender-row">
+                        <div class="calender-component">1</div>
+                        <div class="calender-component">2</div>
+                        <div class="calender-component">3</div>
+                        <div class="calender-component">4</div>
+                        <div class="calender-component">5</div>
+                        <div class="calender-component">6</div>
+                        <div class="calender-component">7</div>
+                    </div>
+                    <div class="calender-row">
+                        <div class="calender-component">8</div>
+                        <div class="calender-component">9</div>
+                        <div class="calender-component">10</div>
+                        <div class="calender-component">11</div>
+                        <div class="calender-component">12</div>
+                        <div class="calender-component">13</div>
+                        <div class="calender-component">14</div>
+                    </div>
+                    <div class="calender-row">
+                        <div class="calender-component">15</div>
+                        <div class="calender-component">16</div>
+                        <div class="calender-component">17</div>
+                        <div class="calender-component">18</div>
+                        <div class="calender-component">19</div>
+                        <div class="calender-component">20</div>
+                        <div class="calender-component">21</div>
+                    </div>
+                    <div class="calender-row">
+                        <div class="calender-component">22<br>
+                            Tai chi 18:00~
+                        </div>
+                        <div class="calender-component">23</div>
+                        <div class="calender-component">24</div>
+                        <div class="calender-component">25</div>
+                        <div class="calender-component">26</div>
+                        <div class="calender-component">27</div>
+                        <div class="calender-component">28</div>
+                    </div>
+                    <div class="calender-row">
+                        <div class="calender-component">29</div>
+                        <div class="calender-component">30</div>
+                        <div class="calender-component">31</div>
+                        <div class="calender-component"></div>
+                        <div class="calender-component"></div>
+                        <div class="calender-component"></div>
+                        <div class="calender-component"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="book-class" id="book-class">
+            <h1>Book Class</h1>
+            <div class="book-form">
+                <form>
+                    <div class="input-group">
+                        <div>
+                            <label for="first_name"><img src="../images/icons/user-3-line.png" alt="name.png"> FirstName:</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                            <span class="validation-error">Please provide your first name.</span>
+                        </div>
+                        <div>
+                            <label for="last_name"><img src="../images/icons/user-3-line.png" alt="name.png"> LastName:</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                            <span class="validation-error">Please provide your first name.</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="phone"><img src="../images/icons/phone-line.png" alt="name.png"> Phone:</label>
+                            <input type="text" name="phone" id="phone" required>
+                            <span class="validation-error">Please provide your first name.</span>
+                        </div>
+                        <div>
+                            <label for="email"><img src="../images/icons/mail-line.png" alt="name.png"> Email:</label>
+                            <input type="email" name="email" id="email" required>
+                            <span class="validation-error">Please provide your first name.</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="class"><img src="../images/icons/mail-open-line.png" alt="name.png"> Class:</label>
+                            <select name="class" id="class">
+                                <option>select</option>
+                                <option>Body attack</option>
+                                <option>Zumba</option>
+                                <option>Body pump</option>
+                                <option>Body step</option>
+                                <option>Rpm</option>
+                                <option>Body balance</option>
+                                <option>Body combat</option>
+                                <option>Body jam</option>
+                                <option>Body vive</option>
+                                <option>Cycle</option>
+                                <option>Cycle extreme</option>
+                                <option>Pilates</option>
+                                <option>Yoga</option>
+                                <option>Aqua fit & aqua mode</option>
+                                <option>Boxing & TAE box</option>
+                                <option>Step moves, step basic & step burner</option>
+                                <option>Rejuvenate, low impact & gentle fitness</option>
+                                <option>Cardio blitz & cardio circuit</option>
+                                <option>World dance & dance</option>
+                                <option>Hilo & fat burner</option>
+                                <option>Sculpt & combo</option>
+                                <option>Power hour</option>
+                                <option>ABT</option>
+                                <option>Abs blast</option>
+                                <option>Tai chi</option>
+                                <option>Chi ball</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="time"><img src="../images/icons/contacts-book-line.png" alt="name.png"> Time:</label>
+                            <select name="time" id="time">
+                                <option>select</option>
+                                <option value="12">12:00~</option>
+                                <option value="15">15:00~</option>
+                                <option value="18">18:00~</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="people"><img src="../images/icons/user-3-line.png" alt="name.png"> People:</label>
+                            <select name="people" id="people">
+                                <option>select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="more">4~</option>
+                            </select>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="agree-terms">
+                        <label for="agree-terms"><img src="../images/icons/chat-1-line.png" alt="name.png"> Agree to terms:</label>
+                        <input type="checkbox" name="agree-terms" id="agree-terms" required>
+                        <span class="validation-error">You must agree to the terms.</span>
+                    </div>
+
+                    <div class="book-form-button">
+                        <button>Book</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <footer id="footer-component"></footer>
+    </main>
+</body>
+</html>
